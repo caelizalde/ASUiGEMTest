@@ -4,3 +4,6 @@ plugins:
 
 title: "Beta-fluorinX"
 description: "ASU iGEM 2023"
+
+plugins:
+  - jekyll-seo-tag
