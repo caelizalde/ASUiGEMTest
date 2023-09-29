@@ -9,30 +9,61 @@
 <body>
      <!---Header--->
          
-        <div class="header">
-            <nav>
-                <img src="/Users/caden/Downloads/iGEM Wiki/iGEMlogo.png" class="logo">
-                <div class="nav-links" id="navlinks">
-                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
-                <ul>
-                    <li><a href="/Users/caden/Downloads/iGEM Wiki/Index.html">HOME</a></li>
-                    <li><a href="/Users/caden/Downloads/iGEM Wiki/Team.html">TEAM</a></li>
-                    <li><a href="">PROJECT</a></li>
-                    <li><a href="">PARTS</a></li>
-                    <li><a href="">HUMAN PRACTICES</a></li>
-                    <li><a href="">SAFETY</a></li>
-                    <li><a href="">JUDGING FORMS</a></li>
-                </ul>
-                </div>
-               <i class="fa-solid fa-bars" onclick="showmenu()"></i>
-            </nav>
+      <div class="header">
+            <div class="wrap">
+<span class="decor"></span>
+<nav>
+  <ul class="primary">
+      <img src="/Users/caden/Downloads/iGEM Wiki/iGEMlogo.png" class="logo">
+    <li>
+      <a href="/Users/caden/Downloads/iGEM Wiki/Project.html">Project</a>
+      <ul class="sub">
+        <li><a href="/Users/caden/Downloads/iGEM Wiki/Project.html">Project Description</a></li>
+        <li><a href="">Design</a></li>
+        <li><a href="">Results</a></li>
+        <li><a href="">Implementation</a></li>
+          <li><a href="">Parts</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/Users/caden/Downloads/iGEM Wiki/Team.html">Team</a>
+      <ul class="sub">
+        <li><a href="/Users/caden/Downloads/iGEM Wiki/Team.html">Team Members
+</a></li>
+        <li><a href="">Collaborations</a></li>
+        <li><a href="">Attributions</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">Human Practices</a>
+      <ul class="sub">
+        <li><a href="">Mapping</a></li>
+        <li><a href="">Outreach/Educaton:
+</a></li>
+      </ul>  
+    </li>
+    <li>
+      <a href="">Safety</a>
+      <ul class="sub">
+      </ul>  
+    </li>
+    <li>
+      <a href="">Judging Form</a>
+      <ul class="sub">
+      </ul>  
+    </li>
+  </ul>
+</nav>
+</div>
              </div>
+             
     <!------Intro to section---->
     <div class="mttintro">
         <h1>Meet The Team</h1>
         <p>Here'a a brief description of our team members and what they do.</p>
     </div>
     <!-----------Individual members--------->
+   <div class="roster">
     <div class="team-member">
         <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 1">
         <div class="team-member-info">
@@ -111,8 +142,9 @@
             <div class="team-member-name">Kylie Hartana</div>
             <div class="team-member-bio">Sample Bio</div>
         </div>
-        
+        </div>
     </div>
+
     
     
 <!------ Footer ------>
@@ -129,31 +161,184 @@
         
     
     <!---------Test-------->
-    <div class="header">
-   <nav>
-      <img src="/Users/caden/Downloads/iGEM Wiki/iGEMlogo.png" class="logo">
-      <div class="nav-links" id="navlinks">
-        <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
-        <ul>
-          <li><a href="/Users/caden/Downloads/iGEM Wiki/Index.html">HOME</a></li>
-          <li><a href="/Users/caden/Downloads/iGEM Wiki/Team.html">TEAM</a></li>
-          <div class="dropdown">
-            <a href="#">PROJECT</a>
-            <ul class="dropdown-menu">
-              <li><a href="/Users/caden/Downloads/iGEM Wiki/Team/Leadership.html">Leadership</a></li>
-              <li><a href="/Users/caden/Downloads/iGEM Wiki/Team/Members.html">Members</a></li>
-            </ul>
-          </div>
-          <li><a href="">PARTS</a></li>
-          <li><a href="">HUMAN PRACTICES</a></li>
-          <li><a href="">SAFETY</a></li>
-          <li><a href="">JUDGING FORMS</a></li>
-        </ul>
-      </div>
-      <i class="fa-solid fa-bars" onclick="showmenu()"></i>
-      </nav>
-   </div>
+
         
+        
+<!-----JavaScript for Toggle Menu----->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right = "0"
+            }
+            function hidemenu(){
+                navlinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/8e83fbf6b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!---Header--->
+         
+      <div class="header">
+            <div class="wrap">
+<span class="decor"></span>
+<nav>
+  <ul class="primary">
+      <img src="/Users/caden/Downloads/iGEM Wiki/iGEMlogo.png" class="logo">
+    <li>
+      <a href="/Users/caden/Downloads/iGEM Wiki/Project.html">Project</a>
+      <ul class="sub">
+        <li><a href="/Users/caden/Downloads/iGEM Wiki/Project.html">Project Description</a></li>
+        <li><a href="">Design</a></li>
+        <li><a href="">Results</a></li>
+        <li><a href="">Implementation</a></li>
+          <li><a href="">Parts</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/Users/caden/Downloads/iGEM Wiki/Team.html">Team</a>
+      <ul class="sub">
+        <li><a href="/Users/caden/Downloads/iGEM Wiki/Team.html">Team Members
+</a></li>
+        <li><a href="">Collaborations</a></li>
+        <li><a href="">Attributions</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">Human Practices</a>
+      <ul class="sub">
+        <li><a href="">Mapping</a></li>
+        <li><a href="">Outreach/Educaton:
+</a></li>
+      </ul>  
+    </li>
+    <li>
+      <a href="">Safety</a>
+      <ul class="sub">
+      </ul>  
+    </li>
+    <li>
+      <a href="">Judging Form</a>
+      <ul class="sub">
+      </ul>  
+    </li>
+  </ul>
+</nav>
+</div>
+             </div>
+             
+    <!------Intro to section---->
+    <div class="mttintro">
+        <h1>Meet The Team</h1>
+        <p>Here'a a brief description of our team members and what they do.</p>
+    </div>
+    <!-----------Individual members--------->
+   <div class="roster">
+    <div class="team-member">
+        <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 1">
+        <div class="team-member-info">
+            <div class="team-member-name">Rori Hoover</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 2">
+        <div class="team-member-info">
+            <div class="team-member-name">Patrick Jiang</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+    </div>
+
+    <div class="team-member">
+       <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 3">
+        <div class="team-member-info">
+            <div class="team-member-name">Brianna Branson</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+        
+    </div>
+ <div class="team-member">
+       <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 4">
+        <div class="team-member-info">
+            <div class="team-member-name">Caden Elizalde</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+        
+    </div>
+ <div class="team-member">
+        <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 5">
+        <div class="team-member-info">
+            <div class="team-member-name">Pranav Bhavaraju</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+        
+    </div>
+     <div class="team-member">
+        <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 6">
+        <div class="team-member-info">
+            <div class="team-member-name">Tahmid Anwar</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+        
+    </div>
+     <div class="team-member">
+        <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 7">
+        <div class="team-member-info">
+            <div class="team-member-name">Isabella Lirtzman</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+        
+    </div>
+     <div class="team-member">
+        <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 8">
+        <div class="team-member-info">
+            <div class="team-member-name">Anwar Gadhi</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+        
+    </div>
+    <div class="team-member">
+        <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 9">
+        <div class="team-member-info">
+            <div class="team-member-name">Evie Nguyen</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+        
+    </div>
+    <div class="team-member">
+       <img src="/Users/caden/Downloads/iGEM Wiki/placeholder-headshot.png" alt="Member 10">
+        <div class="team-member-info">
+            <div class="team-member-name">Kylie Hartana</div>
+            <div class="team-member-bio">Sample Bio</div>
+        </div>
+        </div>
+    </div>
+
+    
+    
+<!------ Footer ------>
+<section class="footer">
+    <h4>Contact us at any of the following</h4>
+    <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+    <p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p>
+    <p>The repository used to create this website is available at [put link here]</p>
+    
+</section>
+        
+    
+    <!---------Test-------->
+
         
         
 <!-----JavaScript for Toggle Menu----->
