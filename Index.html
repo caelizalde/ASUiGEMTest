@@ -7,30 +7,69 @@
        <script src="https://kit.fontawesome.com/8e83fbf6b2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="header">
-            <nav>
-                <img src="/Users/caden/Downloads/iGEM Wiki/iGEMlogo.png" class="logo">
-                <div class="nav-links" id="navlinks">
-                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">TEAM</a></li>
-                    <li><a href="">PROJECT</a></li>
-                    <li><a href="">PARTS</a></li>
-                    <li><a href="">HUMAN PRACTICES</a></li>
-                    <li><a href="">SAFETY</a></li>
-                    <li><a href="">JUDGING FORMS</a></li>
-                </ul>
-                </div>
-               <i class="fa-solid fa-bars" onclick="showmenu()"></i>
-            </nav>
-           <div class="content">
+        <!---Header--->
+         
+         <div class="header">
+            <div class="wrap">
+<span class="decor"></span>
+<nav>
+  <ul class="primary">
+      <img src="/Users/caden/Downloads/iGEM Wiki/iGEMlogo.png" class="logo">
+      <li>
+      <a href="/Users/caden/Downloads/iGEM Wiki/Index.html">Home</a>
+      <ul class="sub">
+      </ul>  
+    </li>
+    <li>
+      <a href="/Users/caden/Downloads/iGEM Wiki/Project.html">Project</a> 
+      <ul class="sub">
+        <li><a href="/Users/caden/Downloads/iGEM Wiki/Project.html">Project Description</a></li>
+        <li><a href="">Design</a></li>
+        <li><a href="">Results</a></li>
+        <li><a href="">Implementation</a></li>
+          <li><a href="">Parts</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/Users/caden/Downloads/iGEM Wiki/Team.html">Team</a>
+      <ul class="sub">
+        <li><a href="/Users/caden/Downloads/iGEM Wiki/Team.html">Team Members
+</a></li>
+        <li><a href="">Collaborations</a></li>
+        <li><a href="">Attributions</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">Human Practices</a>
+      <ul class="sub">
+        <li><a href="">Mapping</a></li>
+        <li><a href="">Outreach/Educaton:
+</a></li>
+      </ul>  
+    </li>
+    <li>
+      <a href="">Safety</a>
+      <ul class="sub">
+      </ul>  
+    </li>
+    <li>
+      <a href="">Judging Form</a>
+      <ul class="sub">
+      </ul>  
+    </li>
+  </ul>
+</nav>
+</div>
+             </div>
+             
+<!-- Header video -->
+        
+            <div class="video-container">
                <h1>Beta-FluorinX</h1>
                <h2>Making Arizona Water Safer</h2>
             
-            </div>
-        
-            <!-- The video -->
+<!---Video--->
+       
         
 <video autoplay muted loop class="video-background">
   <source src="placeholdervid.mp4" type="video/mp4">
@@ -38,187 +77,43 @@
 </div>
         
         
-        
-        
-        
-<!---------TEAM---------->
+<!------Team Vid------>
+<section class="teamvid">
 
-<section class="team">
-        <h1>Meet The Team</h1>
-    <p>Meet our amazing team listed below</p>
-    
-    <div class="row">
-        <div class="team-col">
-            <h3>Caden, The Ladies Man, Elizlade</h3>
-            <p>Caden, is a old soul who spends his days saving puppies from trees. He has an amazing personaliy and is incredible in bed..</p>
-        </div>
+    <video poster="/Users/caden/Downloads/iGEM Wiki/Placeholderimgteam.jpeg" width=400px height=300px controls="controls" preload="none"> 
+   <source src="/Users/caden/Downloads/iGEM Wiki/PlaceholdervidBun.mp4" type="video/mp4">
+        </video>
         
-    <div class="team-col">
-            <h3>h3 Subtitle</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur magna dui, a varius est euismod eu. Donec suscipit massa vitae purus elementum consectetur. Phasellus elementum massa faucibus volutpat aliquet. Mauris venenatis dolor felis. Ut pharetra libero lorem, ut luctus odio tempus eget. Maecenas id consectetur urna, nec hendrerit nunc. In auctor orci porta leo vulputate auctor. Curabitur porta mi diam, ac interdum odio molestie quis. Suspendisse tincidunt venenatis semper. Suspendisse ut urna tellus. Suspendisse potenti. Phasellus et orci elit. Aliquam erat volutpat. Suspendisse auctor sem ut viverra interdum. Aliquam posuere mattis nunc id placerat.</p> 
-        </div>
-        
-    </div>
-        
-        
-</section>
+        </section>
 
         
+<!----- Brief Description ---->
         
-<!---------Campus-------->
-<section class="campus">
-    <h1>This is where I would put a section title for the "campus" class... IF I HAD ONE!!!!</h1>
-    
-    <p>Lorum ipsom and other stuff</p>
-        <div class="row">
-            <div class="campus-col">
-            <img src="PlacehoderImg.png">
-                <div class="layer">
-                <h3>Internal Screaming</h3>
-                </div>
-            </div>
-    <div class="campus-col">
-            <img src="PlaceholderIMG2.png">
-                <div class="layer">
-                <h3>AHHHHHH</h3>
-                </div>
-            </div>
-    <div class="campus-col">
-            <img src="PlaceholderIMG3.png">
-                <div class="layer">
-                <h3>END MY CODING SUFFERING</h3>
-                </div>
-            </div>
-    </div>
+<section class="description">
+    <h1>Eleminating Microplastics in Our Enviroment</h1>
+    <p>The ASU iGEM team considered many possibilities when searching for a suitable mechanism to break down PFAS. One of the first ideas that we had was incorporating PFAS straight into the cell membrane of a bacteria like E. coli since PFAS has similar characteristics to the lipid-bilayer. We also considered using peroxidases like horse-radish peroxidase and alkane monooxygenase to produce high-energy peroxides that could break down PFAS through radical mechanisms. Ultimately, we decided that both these methods would not be feasible because the first one didn’t solve the problem of PFAS degradation and the second one could have negative effects on the bacterial cell. <br>
+We ended up choosing beta oxidation coupled with dehalogenation since we can exploit the fatty acid nature of PFAS like perfluorooctanoic acid (PFOA) or perfluorohexanoic acid (PFHxA) for the degradation. Beta oxidation can break the PFAS into smaller bits which can then be defluorinated by using specific enzymes from the haloacid dehalogenase enzyme superfamily, Therefore, the bacteria can use PFAS as a carbon source and can break down these synthetic chemicals in the process. 
+</p>
+        
+        
         
 </section>
+        
 
         
-<!------Parts------->
-        
-<section class="parts">
-    <h1>Parts</h1>
-    <p>Is this the real life? Is this just fantasy?
-Caught in a landslide, no escape from reality
-Open your eyes, look up to the skies and see
-I'm just a poor boy, I need no sympathy
-Because I'm easy come, easy go, little high, little low
-Any way the wind blows doesn't really matter to me, to me
-Mama, just killed a man
-Put a gun against his head, pulled my trigger, now he's dead
-Mama, life had just begun
-But now I've gone and thrown it all away
-Mama, ooh, didn't mean to make you cry
-If I'm not back again this time tomorrow
-Carry on, carry on as if nothing really matters
-Too late, my time has come
-Sends shivers down my spine, body's aching all the time
-Goodbye, everybody, I've got to go
-Gotta leave you all behind and face the truth
-Mama, ooh (any way the wind blows)
-I don't wanna die
-I sometimes wish I'd never been born at all
-I see a little silhouetto of a man
-Scaramouche, Scaramouche, will you do the Fandango?
-Thunderbolt and lightning, very, very frightening me
-(Galileo) Galileo, (Galileo) Galileo, Galileo Figaro, magnifico
-But I'm just a poor boy, nobody loves me
-He's just a poor boy from a poor family
-Spare him his life from this monstrosity
-Easy come, easy go, will you let me go?
-بِسْمِ ٱللَّٰهِ
-No, we will not let you go (let him go)
-بِسْمِ ٱللَّٰهِ
-We will not let you go (let him go)
-بِسْمِ ٱللَّٰهِ
-We will not let you go (let me go)
-Will not let you go (let me go)
-Never, never, never, never let me go
-No, no, no, no, no, no, no
-Oh, mamma mia, mamma mia
-Mamma mia, let me go
-Beelzebub has a devil put aside for me, for me, for me
-So you think you can stone me and spit in my eye?
-So you think you can love me and leave me to die?
-Oh, baby, can't do this to me, baby
-Just gotta get out, just gotta get right outta here
-Ooh
-Ooh, yeah, ooh, yeah
-Nothing really matters, anyone can see
-Nothing really matters
-Nothing really matters to me</p>
-    <div class="row">
-        <div class="parts-col">
-            <img src="Placeholderimg4.png">
-            <h3>Our Lab</h3>
-            <p>A typical day at Doofenshmirtz Evil Incorporated begins with Dr. Doofenshmirtz coming up with a plan to take over the Tri-State Area. He then builds an evil invention, also known as an "Inator". Perry the Platypus, Doofenshmirtz's nemesis, arrives to put a stop to the scheme. Doofenshmirtz captures Perry in a trap, and explains his evil plan. After Dr. Doofenshmirtz is finished explaining, Perry escapes from the trap and defeats Doofenshmirtz. Job done, Perry leaves Doofenshmirtz to shout "Curse you, Perry the Platypus!". The building can be seen in some of the suburban areas of Danville, such as Phineas and Ferb's backyard.</p>
-        </div>
-        
-        <div class="parts-col">
-            <img src="Placeholder%20Img5.png">
-            <h3>Our Collection Methodology</h3>
-            <p>living our day one struggle at a time</p>
-        </div>
-        
-        <div class="parts-col">
-            <img src="placeholderimg6.jpg">
-            <h3>The chemistry behind the stuff</h3>
-            <p>We mix one carcenogen with another carcenogen to make a third carcenogen that also explodes</p>
-        </div>
-    
-    </div>
-</section>
-        
-<!--------Human Practices-------->
-<section class="HP">
-    <h1>Focusing on our Community</h1>
-    <p>So what does our community think about PFAS?</p>
-    
-    <div class="row">
-        <div class="HP-col">
-            <img src="placeholderimg8.jpg">
-            <div>
-                <p>"Nah homie don't worry about it."</p>
-                <h3>The Chemours Company</h3>
-            </div>
-        </div>
-        <div class="HP-col">
-            <img src="placeholderimg7.png">
-            <div>
-                <p>"Join us. Microplastics aren't that bad. Don't you want to become one of us. Slowly polluting the planet and garroting the necks of the life that lives on it. These humans knew that the plastic they were making by the tons to make their lives easier- the plastic that was made into straws to keep them from lifting their soda a couple inches higher to reach their mouths- was the very same material that metasticised in their biosphere slowly suffocating them. We will watch as the last light leaves the eyes of the human feeblily trying to preserve their useless existance, and as they leave this world their last thought will be "was it worth it?" Millions of years after these carbon based fleshbags have destroyed themselves we will remain as a reminder of their huberous, immortalized as totems to their plastic patrons. So keep drinking that unfiltered water, and slowly become the cancer that will wipe your species out. We will be here. Watching."</p>
-                <h3>Barbie</h3>
-            </div>
-        </div>
-        <div class="HP-col">
-            <img src="placeholderimg9.png">
-            <div>
-                <p>"I'm not with her..."</p>
-                <h3>Ken</h3>
-            </div>
-        </div>
-    </div>
-        
-        
-</section>
-        
-<!------ Safety ------>
-<section class="safety">
-    <h1>Safety</h1>
-    <a href="" class="hero-btn">LMAO No</a>
-        
-</section>
+
 
         
-        
+    
 <!------ Footer ------>
 <section class="footer">
-    <h4>Welp that's it, what are you still doing here</h4>
-    <p>but like seriously there's nothing left</p>
+    <h4>Contact us at any of the following</h4>
     <div class="icons">
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin-in"></i>
     </div>
-    
+    <p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p>
+    <p>The repository used to create this website is available at [put link here]</p>
     
     
     
