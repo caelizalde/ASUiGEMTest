@@ -324,24 +324,52 @@ ul.primary li:hover > a{
     border-radius: 10px;
     padding: 30px;
 }
-/*--------- Project Results --------*/
+/*--------- Project Notes --------*/
+
+    .dow p {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.dow p {
+		display: flex;
+		width: 95%;
+		height: 95%;
+		margin: 0.25rem;
+		flex-flow: column;
+		border-radius: 0.2rem;
+		padding: 1rem;
+		font-weight: 600;
+		font-size: 1rem;
+		box-sizing: border-box;
+		background: rgba(31, 97, 141, .85);
+		box-shadow: 0 8px 32px 0 rgba(46, 204, 113, 0.5);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+.dow p:first-child {
+  grid-column-start: 1;
+}
+.dow{
+    margin-bottom: 20px;
+}
+
 
 .cal body {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	font-family: "Poppins", serif;
-	background: rgb(238, 174, 202);
-	background: radial-gradient(
-		circle,
-		rgba(238, 174, 202, 1) 0%,
-		rgba(46, 204, 113, 1) 100%
-	);
     
+}
+.cal{
+    padding: 10px;
 }
 .cal h1 {
 	font-weight: 800;
-	margin: 1rem 0 0;
+	margin-bottom: 20px;
+    
 }
 
 .cal ul {
@@ -362,26 +390,134 @@ ul.primary li:hover > a{
 		font-weight: 300;
 		font-size: 0.8rem;
 		box-sizing: border-box;
-		background: rgba(255, 255, 255, 0.25);
-		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		background: rgba(31, 97, 141, 1);
+		box-shadow: 0 8px 32px 0 rgba(46, 204, 113, 0.5);
 		border-radius: 10px;
 		border: 1px solid rgba(255, 255, 255, 0.18);
     }
+
 		.cal time {
 			font-size: 2rem;
 			margin: 0 0 1rem 0;
 			font-weight: 500;
+            color: #A6ACAF;
 		}
+.apr li:first-child {
+  grid-column-start: 7;
+}
+.may li:first-child{
+    grid-column-start: 2;
+}
+.jun li:first-child{
+    grid-column-start: 5;
+}
+.jul li:first-child{
+    grid-column-start: 7;
+}
+.aug a:first-child{
+    grid-column-start: 3;
+}
 	
-	.today {
-        background: #ffffff70;
-    }
-		time {
+    
+		.cal time {
 			font-weight: 800;
 		}
-		
-	
+.cal a{
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: 200;
+    background:rgba(212, 172, 13, .85);
+    display: flex;
+		width: 95%;
+		height: 95%;
+		margin: 0.25rem;
+		flex-flow: column;
+		border-radius: 0.2rem;
+		box-sizing: border-box;
+		box-shadow: 0 8px 32px 0 rgba(46, 204, 113, 0.5);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 100
+}
 
+/*--------- Human Practices --------*/
+/*--------- Fig 1 --------*/
+.conmap {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 50%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+    transform: translateX(50%);
+}
+
+.conmap * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.conmap::before,
+.conmap::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.conmap img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.conmap figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.conmap:hover::before,
+.conmap:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.conmap:hover > img {
+  opacity: 0.7;
+}
+
+.conmap:hover figcaption {
+  opacity: 1;
+}
 
 
 
